@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="src/main.css" rel="stylesheet">
+    <title>VooDoo Test</title>
+</head>
+<body>
+    <header class="h-48 border-b-[1px] border-black flex justify-center items-center mb-12 relative">
+        <div class="ml-4 h-[48px] sm:h-24 flex justify-start items-start">
+            <img class="w-[23px] h-[23px] mr-3 sm:w-[45px] sm:h-[45px]" src="src/img/V.svg" alt="logo">
+        </div>
+        <div class="w-full sm:w-3/4  flex items-start justify-between mr-4 sm:mr-16">
+            <div class="flex items-start">
+                <img class="w-[94px] h-[48px] sm:w-[190px] sm:h-[97px]" src="src/img/VooDoo%20Test.svg" alt="logo_text">
+            </div>
+            <div class="flex items-center">
+                <img id="open_basket" class="mr-4 sm:mr-10 cursor-pointer" src="src/img/shopping-cart.svg" alt="busket">
+                <button class="font w-24 h-10 text-white bg-black rounded">Sign-up</button>
+            </div>
+        </div>
+        <div id="basket" class="absolute top-0 right-0 bg-black w-[390px] sm:w-[445px] text-white flex flex-col justify-center items-center invisible">
+            <div class="w-[362px] border-b-[1px] border-[#FCF7E6] pb-[15px] mt-[25px] flex justify-between">
+                <p class="basket_p">Shopping Cart</p>
+                <img id="close_basket" class="cursor-pointer" src="src/img/Vector.svg" alt="close_basket">
+            </div>
+            <div id="basket_main" class="w-[362px] flex flex-col justify-between items-center"></div>
+            <div class="w-[362px] border-t-[1px] border-[#FCF7E6] pt-[15px] mt-[25px] mb-[25px] flex justify-between">
+                <p class="basket_total">TOTAL</p>
+                <p id="basket_total" class="basket_total">0 KR.</p>
+            </div>
+        </div>
+    </header>
+    <main class="flex justify-center items-center">
+        <div class="w-3/4">
+            <div class="w-full h-20 border-0 rounded bg-black text-white flex justify-between items-center mt-16">
+                <div class="flex pl-6 justify-center items-center">
+                    <img src="src/img/alert-circle.svg" alt="circle">
+                    <p class="p_first ml-3 mr-4 sm:mr-12">ALPHA</p>
+                    <p id="dynamic-text" class="p_second">Important information about our service</p>
+                </div>
+                <img id="open_close" class="pr-6 cursor-pointer" src="src/img/chevron-down.svg" alt="chevron">
+            </div>
+            <div id="hidden_text" class="w-full h-20 hidden justify-center items-center text-white bg-[gray]">
+                <p>Привіт! Це завдання виконав - Іван Микитюк.</p>
+            </div>
+            <div id="product-list" class="w-full flex flex-wrap justify-between items-start mt-16"></div>
+            <div id="pagination" class="flex justify-center mt-[60px] mb-[120px]"></div>
+        </div>
+    </main>
+    <footer class="bg-white lg:px-60 py-20 flex justify-center items-center border-t-[1px] border-black mt-24">
+        <div class="w-full bg-white flex flex-col-reverse justify-center lg:flex-row items-center lg:justify-start">
+            <div class="w-full lg:w-80 flex justify-center items-center lg:mr-[30px]">
+                <img class="bg-white" src="src/img/V.svg" alt="logo">
+            </div>
+            <div class="flex justify-center flex-col lg:flex-row">
+                <div class="w-[300px] mb-[30px] lg:mb-[0] lg:mr-[30px]">
+                    <p>FAQ</p>
+                    <p class="mb-2 mt-2">RETURNS</p>
+                    <p>CONTACT</p>
+                </div>
+                <div class="w-[300px] mb-[30px] lg:mb-[0] lg:mr-[30px]">
+                    <p class="mono_font">TERMS & CONDITIONS</p>
+                    <p class="mb-2 mt-2">PRIVACY POLICY</p>
+                    <p class="mb-2 mt-2">COOKIE POLICY</p>
+                    <p>COOKIE SETTINGS</p>
+                </div>
+                <div class="w-[300px] mb-[30px] lg:mb-[0] lg:mr-[30px]">
+                    <p>ABOUT SECOND CHANCE</p>
+                    <p class="mb-2 mt-2">CAREERS</p>
+                    <p class="mb-2 mt-2">FACEBOOK</p>
+                    <p>INSTAGRAM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='src/main.js'></script>
+</body>
+</html>
